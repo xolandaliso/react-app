@@ -33,22 +33,22 @@ function Navbar() {
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
           <a className="nav-link enlarged-link" href="#home">
-            Home
+            HOME
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link enlarged-link" href="#about">
-            About
+            ABOUT
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link enlarged-link" href="#services">
-            Services
+            SERVICES
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link enlarged-link" href="#contact">
-            Contact
+            CONTACT
           </a>
         </li>
       </ul>
