@@ -1,0 +1,97 @@
+/* Landing Page Styles */
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.);
+}
+
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(30%);
+  opacity: 0.1;
+  background-blend-mode: darken;
+}
+
+.welcome-text {
+  text-align: left;
+}
+
+.sub-text {
+  text-align: left;
+  font-weight: normal;
+}
+
+.carousel-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .welcome-text,
+  .sub-text {
+    text-align: left;
+  }
+
+  .landing-page {
+    padding-top: 120px;
+  }
+}
+
+.custom-title {
+  position: relative;
+  top: -220px;
+  left: -140px;
+  font-weight: bold;
+  color:rgb(109, 98, 98);
+  text-align: left;
+  font-size: 4rem; /* Adjust the font size */
+  line-height: 1.1; /* Adjust the line height */
+}
+
+.custom-subtitle {
+  position: relative;
+  top: 60px;
+  left: 110px;
+  text-align: left;
+  color: rgb(109, 98, 98);
+  font-weight: normal !important;
+}
+
+/* Stacked Arrow Container */
+.stacked-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+  z-index: 10;
+}
+
+.arrow-icon {
+  width: 50px;
+  height: 50px;
+  stroke: rgb(109, 98, 98);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}

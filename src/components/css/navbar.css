@@ -1,0 +1,88 @@
+/* Navbar customizations */
+.logo {
+    height: 100px;
+    width: auto;
+  }
+  
+  /* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(109, 98, 98) !important; /* White text for visibility */
+}
+  
+  
+.navbar-nav .nav-link:hover {
+  color: goldenrod !important; /* Blue color on hover */
+}
+  
+  .navbar {
+    background-color: transparent !important; /* Transparent background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    position: absolute; /* Position the navbar above the content */
+    width: 100%; /* Full width */
+    z-index: 100; /* Ensure it appears above the slideshow */
+    position: sticky;
+  }
+  /* Make the logo circular and larger */
+.navbar-logo {
+  width: 150px; /* Adjust size */
+  height: 150px; /* Adjust size */
+  border-radius: 50%; /* Make it circular */
+  /*border: 2px solid #007bff;  Optional border */
+  object-fit: cover; /* Keep aspect ratio */
+}
+
+/* Enlarge navbar links */
+.nav-link.enlarged-link {
+  font-size: 1.7rem; /* Enlarge the font */
+  font-weight: normal; /* Make the text bold */
+  color: #333; /* Dark text color */
+}
+
+.nav-link.enlarged-link:hover {
+  color: goldenrod; /* Blue color on hover */
+}
+
+/* Adjust alignment */
+.navbar-brand span {
+  display: block; /* Place text below logo */
+  font-size: 1.5rem; /* Adjust font size */
+  margin-top: 0.5rem; /* Add space between logo and text */
+  color: rgb(109, 98, 98); /* White text */
+  align-items: center;
+}
+
+.navbar-brand span {
+  font-size: 1.3rem; /* Enlarge the brand text */
+  color: #333; /* Text color */
+}
+s
+.nav-link.enlarged-link {
+  font-size: 1.7rem; /* Enlarge the font */
+  font-weight: normal; /* Keep normal weight */
+  color: #333; /* Dark text color */
+  margin-right: 1.5rem; /* Add spacing between links */
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align logo and text */
+  text-align: center; /* Ensure text is centered */
+}
+
+.navbar-logo {
+  width: 120px; /* Logo size */
+  height: 120px;
+  border-radius: 50%; /* Circular logo */
+  object-fit: cover;
+  margin-bottom: 0.5rem; /* Add space below the logo */
+}
+
+.navbar-brand span {
+  font-size: 1.5rem; /* Adjust font size */
+  color: rgb(109, 98, 98); /* White text */
+}
+
