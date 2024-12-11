@@ -17,8 +17,8 @@
   z-index: 1;
   background-size: cover;
   background-position: center;
-  filter: grayscale(30%);
-  opacity: 0.1;
+  filter: grayscale(90%);
+  opacity: 0.3;
   background-blend-mode: darken;
 }
 
