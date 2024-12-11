@@ -6,9 +6,10 @@
   
   /* Navbar Links */
 .navbar-nav .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: rgb(109, 98, 98) !important; /* White text for visibility */
+  margin-right: 2.3rem
 }
   
   
@@ -23,7 +24,7 @@
     position: absolute; /* Position the navbar above the content */
     width: 100%; /* Full width */
     z-index: 100; /* Ensure it appears above the slideshow */
-    position: sticky;
+    position: relative;
   }
   /* Make the logo circular and larger */
 .navbar-logo {
@@ -36,7 +37,7 @@
 
 /* Enlarge navbar links */
 .nav-link.enlarged-link {
-  font-size: 1.7rem; /* Enlarge the font */
+  font-size: 1.4rem; /* Enlarge the font */
   font-weight: normal; /* Make the text bold */
   color: #333; /* Dark text color */
 }

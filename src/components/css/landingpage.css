@@ -5,7 +5,7 @@
   height: 100vh;
   overflow: hidden;
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.); /* Slight shadow for better readability */
 }
 
 .slideshow-container {
@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   background-size: cover;
   background-position: center;
   filter: grayscale(30%);
@@ -24,6 +24,8 @@
 
 .welcome-text {
   text-align: left;
+  text-shadow: 2px 2px 5px rgba(0., 0, 0, 0.6); /* Slight shadow for better readability */
+
 }
 
 .sub-text {
@@ -52,7 +54,7 @@
   top: -220px;
   left: -140px;
   font-weight: bold;
-  color:rgb(109, 98, 98);
+  color: rgb(109, 98, 98);
   text-align: left;
   font-size: 4rem; /* Adjust the font size */
   line-height: 1.1; /* Adjust the line height */
@@ -75,23 +77,47 @@
   transform: translateX(-50%);
   cursor: pointer;
   animation: bounce 1.5s infinite;
-  z-index: 10;
+  z-index: 9999;
 }
 
+/* Arrow Icon Style */
 .arrow-icon {
   width: 50px;
   height: 50px;
-  stroke: rgb(109, 98, 98);
+  color: black; /* Make the arrow white for better visibility */
 }
 
+/* Bounce Animation */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0); /* Bounce back to the original position */
   }
   40% {
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateY(-10px); /* Move up */
   }
   60% {
-    transform: translateX(-50%) translateY(-5px);
+    transform: translateY(-5px); /* Move down slightly */
   }
+}
+/* Add to your existing CSS file */
+/* Add this to your landingpage.css */
+.services-container {
+  background-color: #f8f9fa; /* Light-grey background */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Optional: Round the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+  margin-bottom: 80px;
+}
+
+/* Services Title */
+.services-title {
+  color: rgb(109, 98, 98); /* Set title font color */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 70px; /* Add spacing below the title */
+}
+
+/* Services Content */
+.services-container h4,
+.services-container p {
+  color: rgb(109, 98, 98); /* Font color for headings and paragraphs */
 }
