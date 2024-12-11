@@ -121,3 +121,54 @@
 .services-container p {
   color: rgb(109, 98, 98); /* Font color for headings and paragraphs */
 }
+
+
+.about-us-container {
+  padding: 40px;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px; /* Adjust size */
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text, .about-image {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+}
