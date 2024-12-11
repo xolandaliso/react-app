@@ -80,6 +80,8 @@ s
   border-radius: 50%; /* Circular logo */
   object-fit: cover;
   margin-bottom: 0.5rem; /* Add space below the logo */
+  filter: grayscale(100%);
+
 }
 
 .navbar-brand span {
