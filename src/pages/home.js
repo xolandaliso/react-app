@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
-import Navbar from '../components/navbar';
+//import Navbar from '../components/navbar';
 import BouncingArrow from '../components/bouncingarrow';
 import ServicesList from '../components/serviceslist'; // Services list import
 import AboutUs from '../components/aboutus'; // About Us import
@@ -33,7 +33,6 @@ function Home() {
 
   return (
     <div>
-      <Navbar />
 
       <div className="landing-page d-flex flex-column align-items-center justify-content-center text-center">
         <div className="container vh-100 d-flex align-items-center justify-content-center">
