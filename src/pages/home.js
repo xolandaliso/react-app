@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import Navbar from '../components/navbar';
-import Carousel from '../components/carousel';
 import BouncingArrow from '../components/bouncingarrow';
+import ServicesList from '../components/serviceslist'; // Services list import
+import AboutUs from '../components/aboutus'; // About Us import
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/css/landingpage.css';
 
@@ -13,7 +15,7 @@ function Home() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showMore, setShowMore] = useState(false);
+  const navigate = useNavigate(); // Initialize navigate function
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +25,10 @@ function Home() {
   }, [images.length]);
 
   const handleArrowClick = () => {
-    setShowMore(!showMore);
+    const element = document.getElementById('services-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' }); // Scrolls smoothly to the section
+    }
   };
 
   return (
@@ -66,11 +71,10 @@ function Home() {
         <BouncingArrow onClick={handleArrowClick} />
       </div>
 
-      {showMore && (
-        <div className="carousel-section mt-5">
-          <Carousel />
-        </div>
-      )}
+      {/* Include the ServicesList component */}
+      <ServicesList />
+      {/* Include the AboutUs component */}
+      <AboutUs />
     </div>
   );
 }
