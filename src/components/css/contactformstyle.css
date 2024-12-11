@@ -1,0 +1,122 @@
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    border-color: red;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .success-message {
+    color: green;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .map-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+  }
+  
+
+  .contact-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* Adds space between contact form and map */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%; /* Allow the form to take its natural width */
+  max-width: 800px; /* Optional: Set a max-width to prevent the form from becoming too wide */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.location-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* Optional: Add some spacing around the form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
+}
