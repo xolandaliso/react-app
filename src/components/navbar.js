@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/navbar.css'; // Add your custom styles here
 import logo from './images/window.png';
+import { Link } from 'react-router';
 
 function Navbar() {
   return (
@@ -32,14 +33,14 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <a className="nav-link enlarged-link" href="#home">
+          <Link className="nav-link enlarged-link" to="/">
             HOME
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link enlarged-link" href="#about">
+          <Link className="nav-link enlarged-link" to="/about">
             ABOUT
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a className="nav-link enlarged-link" href="#services">
@@ -47,9 +48,9 @@ function Navbar() {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link enlarged-link" href="#contact">
-            CONTACT
-          </a>
+          <Link className="nav-link enlarged-link" to="/contact">
+            CONTACT US
+          </Link>
         </li>
       </ul>
     </div>
