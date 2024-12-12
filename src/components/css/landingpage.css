@@ -25,12 +25,15 @@
 .welcome-text {
   text-align: left;
   text-shadow: 2px 2px 5px rgba(0., 0, 0, 0.6); /* Slight shadow for better readability */
-
+  color: rgb(109, 98, 98);
 }
 
 .sub-text {
   text-align: left;
-  font-weight: normal;
+  font-weight: 500;
+  color: rgb(109, 98, 98);
+  font-size: 0.3rem;
+
 }
 
 .carousel-section {
@@ -42,6 +45,9 @@
   .welcome-text,
   .sub-text {
     text-align: left;
+    font-weight: 500;
+    color: rgb(109, 98, 98);
+    font-size: 0.3rem;
   }
 
   .landing-page {
