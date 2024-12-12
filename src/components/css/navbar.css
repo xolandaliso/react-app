@@ -9,7 +9,7 @@
   font-size: 1.4rem;
   font-weight: 500;
   color: rgb(109, 98, 98) !important; /* White text for visibility */
-  margin-right: 2.3rem
+  margin-right: 2.3rem;
 }
   
   
@@ -24,7 +24,7 @@
     position: absolute; /* Position the navbar above the content */
     width: 100%; /* Full width */
     z-index: 100; /* Ensure it appears above the slideshow */
-    position: relative;
+    position: sticky;
   }
   /* Make the logo circular and larger */
 .navbar-logo {
