@@ -5,6 +5,8 @@ import Home from './pages/home';
 import ServicesPage from './pages/servicespage';
 import ContactForm from './components/contactform';
 import AboutUs from './components/aboutus';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 //import Navbar from './components/navbar';
 
 function App() {
