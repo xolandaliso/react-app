@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+//import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 //import Navbar from '../components/navbar';
 import BouncingArrow from '../components/bouncingarrow';
 import ServicesList from '../components/serviceslist'; // Services list import
@@ -15,7 +15,7 @@ function Home() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const navigate = useNavigate(); // Initialize navigate function
+  //const navigate = useNavigate(); // Initialize navigate function
 
   useEffect(() => {
     const interval = setInterval(() => {
