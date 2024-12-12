@@ -52,11 +52,15 @@ function Home() {
         <div className="col-md-6">
           <div className="sub-text">
             <h4 className="fs-4 fw-normal">
-              DR's Aluminium Plus is one of the leading and dedicated metalwork
-              solutions and fabrication services in Cape Town. Our comprehensive
-              services encompass stainless steel, carbon steel, and mild steel
-              fabrication, along with site installation, structural steel works, and
-              fencing solutions.
+            A dynamic company specializing in the
+            manufacturing, installation, and repair
+            of high-quality aluminium products. We deliver
+            custom solutions for windows, doors, casements,
+            and more, tailored to meet the needs of both residential
+            and commercial properties. Our experienced team ensures
+            precision in every step—from design and production to seamless
+            installations and reliable repairs, providing lasting value and
+            exceptional service.
             </h4>
           </div>
         </div>
