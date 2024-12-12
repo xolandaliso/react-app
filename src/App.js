@@ -1,8 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './components/layout';
 import Home from './pages/home';
-import ServicesPage from './pages/services';
-import ContactPage from './pages/contactpage';
+import ServicesPage from './pages/servicespage';
+import ContactForm from './components/contactform';
+import AboutUs from './components/aboutus';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 //import Navbar from './components/navbar';
 
 function App() {
@@ -10,9 +14,12 @@ function App() {
     <Router>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact" element={<ContactForm />} />
+        </Route>
       </Routes>
     </Router>
   );
