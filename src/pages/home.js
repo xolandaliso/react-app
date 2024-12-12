@@ -33,34 +33,38 @@ function Home() {
 
   return (
     <div>
-
-      <div className="landing-page d-flex flex-column align-items-center justify-content-center text-center">
-        <div className="container vh-100 d-flex align-items-center justify-content-center">
-          <div className="row w-100">
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
-              <div className="welcome-text custom-title">
-                <h1 className="display-2">
-                  Welcome to <br />
-                  DR's Aluminium Plus
-                </h1>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="sub-text custom-subtitle">
-                <h3 style={{ fontWeight: 'normal' }}>
-                  DR's Aluminium Plus is one of the leading and dedicated metalwork
-                  solutions and fabrication services in Cape Town. Our comprehensive
-                  services encompass stainless steel, carbon steel, and mild steel
-                  fabrication, along with site installation, structural steel works, and
-                  fencing solutions.
-                </h3>
-              </div>
-            </div>
+  {/* Full-Screen Landing Page */}
+  <div
+    className="landing-page vh-100 d-flex align-items-center justify-content-center text-center position-relative">
+    {/* Overlay Content */}
+    <div className="container position-absolute top-25 start-50 translate-middle">
+      <div className="row">
+        {/* Welcome Text */}
+        <div className="col-md-6 d-flex align-items-center justify-content-start">
+          <div className="welcome-text position-relative bottom-50 translate-middle-y">
+            <h1 className="display-3">
+              Welcome to <br />
+              DR's Aluminium Plus
+            </h1>
+          </div>
+        </div>
+        {/* Sub-Text */}
+        <div className="col-md-6">
+          <div className="sub-text">
+            <h4 className="fs-4 fw-normal">
+              DR's Aluminium Plus is one of the leading and dedicated metalwork
+              solutions and fabrication services in Cape Town. Our comprehensive
+              services encompass stainless steel, carbon steel, and mild steel
+              fabrication, along with site installation, structural steel works, and
+              fencing solutions.
+            </h4>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div
+  <div
         className="slideshow-container"
         style={{
           backgroundImage: `url(${images[currentImageIndex]})`,
@@ -68,13 +72,23 @@ function Home() {
         }}
       >
         <BouncingArrow onClick={handleArrowClick} />
-      </div>
+  </div>
 
-      {/* Include the ServicesList component */}
+  {/* Services Section */}
+  <section id="services-section" className="py-5">
+    <div className="container">
       <ServicesList />
-      {/* Include the AboutUs component */}
+    </div>
+  </section>
+
+  {/* About Us Section */}
+  <section id="about-us-section" className="py-5">
+    <div className="container">
       <AboutUs />
     </div>
+  </section>
+</div>
+
   );
 }
 
