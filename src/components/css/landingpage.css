@@ -152,14 +152,13 @@
 }
 
 .about-image {
-  flex: 1;
-  padding: 20px;
+  height: 300px; /* Adjust this value to the desired height */
+  overflow: hidden;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 500px; /* Adjust size */
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
