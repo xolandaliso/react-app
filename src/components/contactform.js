@@ -32,7 +32,7 @@ function ContactForm() {
     return formErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
@@ -43,6 +43,24 @@ function ContactForm() {
     setErrors({});
     setIsSubmitted(true);
     console.log('Form Submitted:', formData);
+
+    try {
+        // Send form data to the backend
+        const response = await fetch('http://localhost:3000/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+          alert('Thank you for contacting us!');
+        } else {
+          alert('Failed to send the message.');
+        }
+      } catch (error) {
+        console.error('Error submitting the form:', error);
+        alert('An error occurred. Please try again later.');
+      }
 
     // Reset the form
     setFormData({ name: '', email: '', message: '' });
