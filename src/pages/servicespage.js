@@ -51,7 +51,7 @@ const services = [
     description: 'We offer a range of\
                 shower designs, including\
                 frameless, semi-framed, and fully framed options.',
-    icon: 'bi-file-earmark',  
+    icon: 'bi-droplet',  
     images: [
       require('../components/images/shower/shower1.png'),
       require('../components/images/shower/shower2.png'),
@@ -65,7 +65,7 @@ const services = [
     description: 'We offer expert repairs\
             and maintenance services, including glass,\
             lock, handle, friction stay, and roller replacements.',
-    icon: 'bi-file-earmark',  
+    icon: 'bi-wrench',  
     images: [
       require('../components/images/repairs/repair1.png'),
       require('../components/images/repairs/repair2.png'),
