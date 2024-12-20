@@ -17,7 +17,7 @@
   z-index: 1;
   background-size: cover;
   background-position: center;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
   opacity: 0.3;
   background-blend-mode: darken;
 }
@@ -25,13 +25,13 @@
 .welcome-text {
   text-align: left;
   text-shadow: 2px 2px 5px rgba(0., 0, 0, 0.6); /* Slight shadow for better readability */
-  color: rgb(109, 98, 98);
+  color:goldenrod;
 }
 
 .sub-text {
   text-align: left;
   font-weight: 500;
-  color: rgb(109, 98, 98);
+  color: goldenrod;
   font-size: 0.3rem;
 
 }
@@ -46,7 +46,7 @@
   .sub-text {
     text-align: left;
     font-weight: 500;
-    color: rgb(109, 98, 98);
+    color: goldenrod;;
     font-size: 0.3rem;
   }
 
@@ -60,7 +60,7 @@
   top: -220px;
   left: -140px;
   font-weight: bold;
-  color: rgb(109, 98, 98);
+  color: goldenrod;;
   text-align: left;
   font-size: 4rem; /* Adjust the font size */
   line-height: 1.1; /* Adjust the line height */
@@ -71,7 +71,7 @@
   top: 60px;
   left: 110px;
   text-align: left;
-  color: rgb(109, 98, 98);
+  color: goldenrod;;
   font-weight: normal !important;
 }
 
@@ -84,13 +84,14 @@
   cursor: pointer;
   animation: bounce 1.5s infinite;
   z-index: 9999;
+  color: whitesmoke;
 }
 
 /* Arrow Icon Style */
 .arrow-icon {
   width: 50px;
   height: 50px;
-  color: black; /* Make the arrow white for better visibility */
+  color: white; /* Make the arrow white for better visibility */
 }
 
 /* Bounce Animation */
@@ -105,10 +106,10 @@
     transform: translateY(-5px); /* Move down slightly */
   }
 }
-/* Add to your existing CSS file */
-/* Add this to your landingpage.css */
+
+
 .services-container {
-  background-color: #f8f9fa; /* Light-grey background */
+  background-color: goldenrod; /* Light-grey background */
   padding: 20px; /* Add padding for spacing */
   border-radius: 8px; /* Optional: Round the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
@@ -117,7 +118,7 @@
 
 /* Services Title */
 .services-title {
-  color: rgb(109, 98, 98); /* Set title font color */
+  color: black; /* Set title font color */
   font-weight: bold; /* Make the title bold */
   margin-bottom: 70px; /* Add spacing below the title */
 }
@@ -125,7 +126,7 @@
 /* Services Content */
 .services-container h4,
 .services-container p {
-  color: rgb(109, 98, 98); /* Font color for headings and paragraphs */
+  color: black; /* Font color for headings and paragraphs */
 }
 
 

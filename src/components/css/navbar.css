@@ -8,13 +8,13 @@
 .navbar-nav .nav-link {
   font-size: 1.4rem;
   font-weight: 500;
-  color: rgb(109, 98, 98) !important; /* White text for visibility */
+  color: goldenrod !important; /* White text for visibility */
   margin-right: 2.3rem;
 }
   
   
 .navbar-nav .nav-link:hover {
-  color: goldenrod !important; /* Blue color on hover */
+  color: rgb(245, 177, 7) !important; /* Blue color on hover */
 }
   
   .navbar {
@@ -43,7 +43,7 @@
 }
 
 .nav-link.enlarged-link:hover {
-  color: goldenrod; /* Blue color on hover */
+  color: yellow; /* Blue color on hover */
 }
 
 /* Adjust alignment */
@@ -80,12 +80,12 @@ s
   border-radius: 50%; /* Circular logo */
   object-fit: cover;
   margin-bottom: 0.5rem; /* Add space below the logo */
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 
 }
 
 .navbar-brand span {
   font-size: 1.5rem; /* Adjust font size */
-  color: rgb(109, 98, 98); /* White text */
+  color: goldenrod; /* White text */
 }
 

@@ -28,6 +28,10 @@ const services = [
       require('../components/images/installation/install3.jpeg'),
       require('../components/images/installation/install9.jpeg'),
       require('../components/images/installation/install8.jpeg'),
+      require('../components/images/installation/install10.jpeg'),
+      require('../components/images/installation/install11.jpeg'),
+      require('../components/images/installation/install12.jpeg'),
+      require('../components/images/installation/install13.jpeg')
     ],
   },
   {
