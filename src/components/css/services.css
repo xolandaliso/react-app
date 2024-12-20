@@ -88,3 +88,14 @@
     background-color: #c82333;
   }
   
+
+  .about-image-services {
+    height: 300px; /* Adjust this value to the desired height */
+    overflow: hidden;
+  }
+  
+  .about-image img-services {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../components/css/services.css';
-import '../components/css/landingpage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -130,7 +129,7 @@ const ServicesPage = () => {
         <div className="row row-cols-1 row-cols-md-3 g-4"> {/* Creates space between the images */}
           {selectedService.images.map((image, index) => (
             <div key={index} className="col">
-                <div key={index} className="about-image">
+                <div key={index} className="about-image-services">
                 <img 
                     src={image} 
                     alt={`Service work ${index + 1}`} 
