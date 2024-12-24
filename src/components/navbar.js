@@ -9,7 +9,9 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
-        {/* Logo and Brand Text */}
+
+        {/* logo and brand text */}
+
         <a className="navbar-brand" href="/">
           <img
             src={logo}
@@ -19,7 +21,8 @@ function Navbar() {
           <span>DR's Aluminium +</span>
         </a>
 
-        {/* Navbar Links */}
+        {/* navbar Links */}
+        
         <button
           className="navbar-toggler"
           type="button"

@@ -24,7 +24,7 @@
     position: absolute; /* Position the navbar above the content */
     width: 100%; /* Full width */
     z-index: 100; /* Ensure it appears above the slideshow */
-    position: sticky;
+    position: relative;
   }
   /* Make the logo circular and larger */
 .navbar-logo {

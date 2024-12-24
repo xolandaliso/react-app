@@ -55,14 +55,16 @@ const ContactFormPartial = ({ formData, errors, handleChange, handleSubmit, isSu
       <div className="location-container">
         <h3>Our Location</h3>
         <div className="map-container">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.677492364195!2d18.493207910887204!3d-33.79482557314344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dccf5eb2c758807%3A0x4b0261c5edcd3b8d!2sThe%20Residence%20Estate!5e0!3m2!1sen!2sza!4v1733923528000!5m2!1sen!2sza"
-            width="100%" height="450"
-            style={{ border: '0' }} 
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade">
-          </iframe>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.907287972364!2d18.703045!3d-33.8405015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc56af9af8fec3%3A0xfe6b6688bbe5dad5!2s138%20Shelley%20Rd%2C%20Zoo%20Park%2C%20Cape%20Town%2C%207570!5e0!3m2!1sen!2sza!4v1735033868017!5m2!1sen!2sza" 
+          width="600" 
+          height="450" 
+          style={{ border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade" 
+          title="Google Maps Location for 138 Shelley Rd, Zoo Park, Cape Town">
+        </iframe>
         </div>
       </div>
     </div>

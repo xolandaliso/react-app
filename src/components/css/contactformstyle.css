@@ -120,3 +120,53 @@
   color: green;
   margin-bottom: 10px;
 }
+
+
+.contact-us {
+  background: linear-gradient(to right, #f27121, #e94057);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  margin: 2rem auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-us h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #f27121;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0.5rem 0;
+}

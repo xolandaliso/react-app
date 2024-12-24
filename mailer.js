@@ -19,11 +19,12 @@ const transporter = nodemailer.createTransport({
 
 // send email function
 
-const sendEmail = async (to, subject, html) => {
+const sendEmail = async (fromEmail, subject, html) => {
   try {
     const info = await transporter.sendMail({
-      from: `"DR's Aluminium + (PTY) LTD." <${process.env.EMAIL_USER}>`,
-      to,
+      from: `"DR's Aluminium + (PTY) LTD" <${process.env.EMAIL_USER}>`, // Business email as sender
+      to: process.env.EMAIL_USER, // Use business email as the recipient
+      replyTo: fromEmail, // This ensures replies go to the user who submitted the form
       subject,
       html,
     });
@@ -35,5 +36,6 @@ const sendEmail = async (to, subject, html) => {
     throw error;
   }
 };
+
 
 module.exports = sendEmail;
