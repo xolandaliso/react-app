@@ -1,5 +1,7 @@
 import React from 'react';
-import './footer.css'; // Add your custom styles
+import './footer.css'; 
+import { Link } from 'react-router';
+
 import { FaMapMarkerAlt, FaGlobe, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
@@ -30,8 +32,8 @@ const Footer = () => {
           </span>
         </div>
         <ul className="footer-links">
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/terms-of-services">Terms of Service</a></li>
+          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link to="/terms-of-services">Terms of Service</Link></li>
         </ul>
       </div>
     </footer>
