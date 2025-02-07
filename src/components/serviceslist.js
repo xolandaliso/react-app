@@ -20,7 +20,7 @@ function ServicesList() {
             <h4 className="fs-4 fw-normal">Installations</h4>
 
             <p className="fs-6 fw-normal">We also offer expert installation services 
-                to ensure every aluminium window, door, and casement
+                to ensure every aluminium window, door, shopfronts, and casement
                 fits perfectly. Our experienced team delivers seamless,
                 hassle-free installations that enhance the functionality
                 and aesthetic of your space. Whether for new construction,

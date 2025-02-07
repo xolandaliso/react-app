@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 import './css/navbar.css'; // Add your custom styles here
-import logo from './images/window.png';
+import logo from './images/logo.jpg';
 import { Link } from 'react-router';
 
 function Navbar() {

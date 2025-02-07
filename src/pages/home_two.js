@@ -15,19 +15,19 @@ function Home() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate(); // initialize navigate function
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // Change image every 10 seconds
+    }, 10000); // change image every 10 seconds
     return () => clearInterval(interval);
   }, [images.length]);
 
   const handleArrowClick = () => {
     const element = document.getElementById('services-section');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' }); // Scrolls smoothly to the section
+      element.scrollIntoView({ behavior: 'smooth' }); // scrolls smoothly to the section
     }
   };
 

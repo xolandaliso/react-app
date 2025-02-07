@@ -24,11 +24,11 @@ const Footer = () => {
         {/* Phone and Email */}
         <div className="contact-details">
           <span style={{ color: 'goldenrod' }}>
-            <FaPhoneAlt /> +27 61 482 8981
+            <FaPhoneAlt /> +27 73 182 8866
           </span>
           <span> | </span>
           <span style={{ color: 'goldenrod' }}>
-            <FaEnvelope /> drsalumin@drs-aluminium-plus.co.za
+            <FaEnvelope /> admin@drs-aluminium-plus.co.za
           </span>
         </div>
         <ul className="footer-links">

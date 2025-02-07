@@ -9,8 +9,11 @@ import '../components/css/landingpage.css';
 function Home() {
   const images = [
     require('../components/images/grinder.png'),
-    require('../components/images/aluminium.png'),
+    require('../components/images/manufact11.jpeg'),
     require('../components/images/gg.png'),
+    require('../components/images/manufact4.jpeg'),
+    require('../components/images/manufact2.jpeg'),
+
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
