@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../components/css/services.css';
-import '../components/css/landingpage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,6 +15,9 @@ const services = [
       require('../components/images/manufacturing/manufact1.jpeg'),
       require('../components/images/manufacturing/manufact2.jpeg'),
       require('../components/images/manufacturing/manufact3.jpeg'),
+      require('../components/images/manufacturing/manufact8.jpeg'),
+      require('../components/images/manufacturing/manufact9.jpeg'),
+      require('../components/images/manufacturing/manufact10.jpeg'),
     ],
   },
   {
@@ -26,8 +28,13 @@ const services = [
     images: [
       require('../components/images/installation/install6.jpeg'),
       require('../components/images/installation/install3.jpeg'),
+      require('../components/images/installation/install12.jpeg'),
+      require('../components/images/installation/install13.jpeg'),
       require('../components/images/installation/install9.jpeg'),
       require('../components/images/installation/install8.jpeg'),
+      require('../components/images/installation/install10.jpeg'),
+      require('../components/images/installation/install11.jpeg'),
+      
     ],
   },
   {
@@ -126,13 +133,16 @@ const ServicesPage = () => {
         <div className="row row-cols-1 row-cols-md-3 g-4"> {/* Creates space between the images */}
           {selectedService.images.map((image, index) => (
             <div key={index} className="col">
-                <div key={index} className="about-image">
-                <img 
-                    src={image} 
-                    alt={`Service work ${index + 1}`} 
+              <div className="about-image-services">
+                <a href={image} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={image}
+                    alt={`Service work ${index + 1}`}
                     className="img-fluid"
-                />
-            </div>
+                    style={{ cursor: 'pointer' }} // Change cursor to pointer
+                  />
+                </a>
+              </div>
             </div>
           ))}
         </div>

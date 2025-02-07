@@ -2,14 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 import './css/navbar.css'; // Add your custom styles here
-import logo from './images/window.png';
+import logo from './images/logo.jpg';
 import { Link } from 'react-router';
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
-        {/* Logo and Brand Text */}
+
+        {/* logo and brand text */}
+
         <a className="navbar-brand" href="/">
           <img
             src={logo}
@@ -19,7 +21,8 @@ function Navbar() {
           <span>DR's Aluminium +</span>
         </a>
 
-        {/* Navbar Links */}
+        {/* navbar Links */}
+        
         <button
           className="navbar-toggler"
           type="button"

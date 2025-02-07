@@ -1,12 +1,13 @@
-/* Landing Page Styles */
+/* Landing Page Base Styles */
 .landing-page {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.); /* Slight shadow for better readability */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 .slideshow-container {
   position: absolute;
@@ -17,65 +18,62 @@
   z-index: 1;
   background-size: cover;
   background-position: center;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
   opacity: 0.3;
   background-blend-mode: darken;
 }
 
-.welcome-text {
-  text-align: left;
-  text-shadow: 2px 2px 5px rgba(0., 0, 0, 0.6); /* Slight shadow for better readability */
-  color: rgb(109, 98, 98);
+/* Content Layout */
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
+
+/* Welcome Text Styles */
+.welcome-text {
+  position: relative;
+  z-index: 4;  /* Higher z-index to stay above arrows */
+  margin-bottom: 30rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  text-align: left;
+
+}
+
+.welcome-text h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: left;
+
+}
+
+/* Sub Text Styles */
 .sub-text {
+  position: relative;
+  z-index: 4;  /* Higher z-index to stay above arrows */
+  color: goldenrod;
+  max-width: 600px;
+  margin: 0 auto;
   text-align: left;
   font-weight: 500;
-  color: rgb(109, 98, 98);
-  font-size: 0.3rem;
-
+  /* margin-top: rem; */
 }
 
-.carousel-section {
-  padding: 40px 20px;
-  background-color: #ffffff;
+
+.sub-text h4 {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .welcome-text,
-  .sub-text {
-    text-align: left;
-    font-weight: 500;
-    color: rgb(109, 98, 98);
-    font-size: 0.3rem;
-  }
-
-  .landing-page {
-    padding-top: 120px;
-  }
-}
-
-.custom-title {
-  position: relative;
-  top: -220px;
-  left: -140px;
-  font-weight: bold;
-  color: rgb(109, 98, 98);
-  text-align: left;
-  font-size: 4rem; /* Adjust the font size */
-  line-height: 1.1; /* Adjust the line height */
-}
-
-.custom-subtitle {
-  position: relative;
-  top: 60px;
-  left: 110px;
-  text-align: left;
-  color: rgb(109, 98, 98);
-  font-weight: normal !important;
-}
-
-/* Stacked Arrow Container */
+/* Bouncing Arrow Styles */
 .stacked-arrow {
   position: absolute;
   bottom: 20px;
@@ -83,60 +81,54 @@
   transform: translateX(-50%);
   cursor: pointer;
   animation: bounce 1.5s infinite;
-  z-index: 9999;
+  z-index: 3;  /* Lower z-index than text */
+  color: whitesmoke;
 }
 
-/* Arrow Icon Style */
 .arrow-icon {
   width: 50px;
   height: 50px;
-  color: black; /* Make the arrow white for better visibility */
+  color: white;
 }
 
-/* Bounce Animation */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); /* Bounce back to the original position */
+    transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px); /* Move up */
+    transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-5px); /* Move down slightly */
+    transform: translateY(-5px);
   }
 }
-/* Add to your existing CSS file */
-/* Add this to your landingpage.css */
+
+/* Services Section */
 .services-container {
-  background-color: #f8f9fa; /* Light-grey background */
-  padding: 20px; /* Add padding for spacing */
-  border-radius: 8px; /* Optional: Round the corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+  background-color: goldenrod;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 80px;
-}
-
-/* Services Title */
-.services-title {
-  color: rgb(109, 98, 98); /* Set title font color */
-  font-weight: bold; /* Make the title bold */
-  margin-bottom: 70px; /* Add spacing below the title */
-}
-
-/* Services Content */
-.services-container h4,
-.services-container p {
-  color: rgb(109, 98, 98); /* Font color for headings and paragraphs */
-}
-
-
-.about-us-container {
-  padding: 40px;
+  margin-top: 5%;
 }
 
 .services-title {
+  color: black;
+  font-weight: bold;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+}
+
+.services-container h4,
+.services-container p {
+  color: black;
+}
+
+/* About Section */
+.about-us-container {
+  padding: 40px;
 }
 
 .about-section {
@@ -152,7 +144,7 @@
 }
 
 .about-image {
-  height: 300px; /* Adjust this value to the desired height */
+  height: 300px;
   overflow: hidden;
 }
 
@@ -162,18 +154,65 @@
   object-fit: cover;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+    padding-bottom: 60px; /* Make room for the arrow */
+  }
+  
+  .welcome-text {
+    margin-bottom: 2rem;
+    margin-top: 0.3rem;
+    text-align: center;
+  }
+
+  .welcome-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .sub-text {
+    text-align: center;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .sub-text h4 {
+    font-size: 0.9rem;
+  }
+
   .about-section {
     flex-direction: column;
     align-items: center;
   }
 
-  .about-text, .about-image {
+  .about-text, 
+  .about-image {
     padding: 20px;
     width: 100%;
   }
 
   .about-image img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
+
+  .sub-text h4 {
+    font-size: 0.8rem;
+  }
+
+  .services-container {
+    padding: 15px;
+    margin-bottom: 40px;
+  }
+
+  .services-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
   }
 }

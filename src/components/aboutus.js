@@ -1,6 +1,8 @@
 import React from 'react';
 import './css/landingpage.css'; // Assuming you'll use custom CSS for styling
-import weld from './images/weld.png';
+import manufact from './images/manufact.jpeg';
+import house from './images/house.jpeg';
+
 
 
 function AboutUs() {
@@ -24,14 +26,14 @@ function AboutUs() {
           </p>
         </div>
         <div className="about-image">
-          <img src={ weld } alt="Mission" />
+          <img src={ house } alt="Mission" />
         </div>
       </div>
 
       {/* Vision Section */}
       <div className="about-section">
         <div className="about-image">
-          <img src={ weld } alt="Vision" />
+          <img src={ manufact } alt="Vision" />
         </div>
         <div className="about-text">
           <h4>Vision</h4>

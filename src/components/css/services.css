@@ -1,6 +1,14 @@
 .services-page-container {
     padding: 20px;
   }
+
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  
+  .object-contain {
+    object-fit: contain;
+  }
   
   .services-list {
     display: grid;
@@ -88,3 +96,53 @@
     background-color: #c82333;
   }
   
+
+  .about-image-services {
+    height: 300px; /* Adjust this value to the desired height */
+    overflow: hidden;
+  }
+  
+  .about-image img-services {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-image-services img {
+    width: 100%; /* Ensure the image spans the container */
+    height: auto; /* Automatically adjust height based on aspect ratio */
+    object-fit: cover; /* Ensures the image fills the aspect ratio without distortion */
+    aspect-ratio: 4 / 3; /* Set the desired aspect ratio (e.g., 4:3) */
+    /* border: 1px solid #ccc; Optional: Add a border for better visibility */
+    /* border-radius: 5px; Optional: Add rounded corners */
+}
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.image-modal .modal-content {
+  position: relative;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.image-modal img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
